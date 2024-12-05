@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1c1b3b;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; /* Adjust opacity for a faded effect */
+    z-index: -1;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* Timer Container */
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.timer-display {
+    background-color: rgba(28, 27, 59, 0.7); /* Semi-transparent purple */
+    padding: 20px 40px;
+    font-size: 3rem;
+    color: #FFA500; /* Orange text */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: #800080; /* Purple button background */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startTimer {
+    background-color: #FFA500; /* Orange button */
+}
+
+#resetTimer {
+    background-color: #FFFFFF; /* White button */
+    color: #800080; /* Purple text */
+}
